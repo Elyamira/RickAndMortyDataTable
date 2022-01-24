@@ -129,7 +129,7 @@ function TableData({ dataForTable }: any) {
                     <TableBody
                         dataForTable={tableData}
                         onEditCharacters={(value: any) => editCharacters(value)}
-                        ondeleteCharacter={(value: any) => deleteCharacter(value)}
+                        onDeleteCharacter={(value: any) => deleteCharacter(value)}
                         onShowCharacterDetails={(value: any) => showCharacterDetails(value)}
                     />
                 </table>
