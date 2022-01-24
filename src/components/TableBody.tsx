@@ -20,7 +20,7 @@ const TableBody = (props: any) => {
                 </td>
                 <td>{value.status}</td>
                 <td>{value.species}</td>
-                <td><img src={value.image ? value.image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucXstOLeXH173ZuCEInFtMQYURPlcF64TedwOreKHQNRKIMoRAiCXZZGVcKMJdzAb884&usqp=CAU"} alt="Character" /></td>
+                <td><img className="max-w-xs" src={value.image ? value.image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucXstOLeXH173ZuCEInFtMQYURPlcF64TedwOreKHQNRKIMoRAiCXZZGVcKMJdzAb884&usqp=CAU"} alt="Character" /></td>
                 {value.id ? <td><button role={"edit-" + value.id} onClick={() => { editCharacters(value.id) }}>
                     <img src={editeIcon} alt="edit" />
                 </button></td> : null}
